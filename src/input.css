@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .card {
+        @apply bg-white rounded-md shadow-lg overflow-hidden;
+    }
+
+    .card-img {
+        @apply w-full h-48 object-cover;
+    }
+
+    .card-pill {
+        @apply uppercase text-xs inline-block py-0.5 px-3 rounded-full font-medium text-white;
+    }
+
+    .card-body {
+        @apply m-4 min-h-[250px];
+    }
+}
